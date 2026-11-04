@@ -1,3 +1,13 @@
+# CCKF RustDesk Custom Client — signing review preparation
+
+This branch contains an independent RustDesk customization for authorized self-hosted remote support. **It is not an official RustDesk release. Signing application pending; no signed CCKF release is claimed.**
+
+See [CCKF project and deployment documentation](cckf/README.md), [Code signing policy](cckf/CODE_SIGNING_POLICY.md), and [remaining review requirements](cckf/REVIEW_STATUS.md). The generic public deployment template does not contain the organization's actual access password. The earlier tested internal r7 package is separate and remains unsigned.
+
+---
+
+The original upstream README follows, with its license and author attribution preserved.
+
 <p align="center">
   <img src="res/logo-header.svg" alt="RustDesk - Your remote desktop"><br>
   <a href="#raw-steps-to-build">Build</a> •

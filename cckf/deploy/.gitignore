@@ -1,0 +1,8 @@
+deployment.private.json
+*.password
+*.secret
+*.pfx
+*.p12
+installer.sha256
+rustdesk-*.exe
+option-query*.txt
