@@ -1,0 +1,22 @@
+name: CCKF source and deployment checks
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'cckf/**'
+      - '.github/workflows/cckf-*.yml'
+      - 'src/ui_interface.rs'
+      - 'flutter/windows/runner/Runner.rc'
+      - 'README.md'
+permissions:
+  contents: read
+jobs:
+  deployment-checks:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          persist-credentials: false
+      - name: Check scripts and private-data exclusions
+        shell: powershell
+        run: ./cckf/tests/Test-Deployment.ps1

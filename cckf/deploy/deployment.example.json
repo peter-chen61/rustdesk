@@ -1,0 +1,6 @@
+{
+  "host": "rustdesk.example.invalid",
+  "relay": "rustdesk.example.invalid",
+  "api": "",
+  "key": "REPLACE_WITH_YOUR_SERVER_PUBLIC_KEY"
+}

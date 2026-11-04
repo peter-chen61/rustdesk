@@ -250,6 +250,10 @@ pub fn get_hard_option(key: String) -> String {
 
 #[inline]
 pub fn get_builtin_option(key: &str) -> String {
+    // CCKF fork: hide the server-settings entry without changing networking.
+    if key == "hide-server-settings" {
+        return "Y".to_owned();
+    }
     crate::get_builtin_option(key)
 }
 
